@@ -5,7 +5,7 @@ import Snowfall from 'react-snowfall'
 export default function Home() {
   return (
     <div >
-      <Snowfall/>
+      <Snowfall color={settings.color} snowflakeCount={settings.snowflakeCount} />
      <div className='bg-one'>
 
 
