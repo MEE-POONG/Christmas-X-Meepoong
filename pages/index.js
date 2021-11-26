@@ -7,9 +7,10 @@ export default function Home() {
     <div >
      
      <div className='bg-one'>
-
-
-
+     </div>
+     <div className='bg-one'>
+     </div>
+     <div className='bg-one'>
      </div>
     
     </div>
