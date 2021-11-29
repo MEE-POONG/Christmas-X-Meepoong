@@ -2,9 +2,9 @@ import React from 'react'
 
 function card() {
     return (
-        <div>
-            
-        </div>
+      
+        <div className =" mx-auto max-w" >
+     </div>
     )
 }
 

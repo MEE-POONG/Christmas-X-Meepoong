@@ -19,6 +19,10 @@ function navbar() {
         <div className="w-full  mx-auto">
           <Image src="/assets/bg-bg.jpg" height={400} width={2000} />
         </div>
+        
+      </div>
+      <div className=" w-screen">
+      <div className='box-content  w-4/5 h-28 mb-3 border-2 border-gray-300 rounded-lg px-3 py-2 bg-white  '></div>
       </div>
     </div>
   );
