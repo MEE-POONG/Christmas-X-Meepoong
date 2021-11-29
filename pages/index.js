@@ -1,9 +1,12 @@
-import react from "react";
+// import react, { useEffect, useState } from "react";
 import Navbar from "../components/navbar";
 import Head from "next/head";
 
 
 import CountdownTimer from "../components/CountdownTimer";
+
+
+
 
 
 export default function Home() {
@@ -17,9 +20,8 @@ export default function Home() {
         <title>Christmas X Meepoong</title>
       </Head>
       <Navbar/>
-      <CountdownTimer
-      CountdownTimestampMs={164367300000} />
-    
+   
+
     </div>
   );
 }

@@ -2,7 +2,7 @@ import { useState,useEffect } from "react";
 import {getRemainingTimeUntilMsTimestamp} from'./Utils/CountdownTimerUtils';
 
 const defaultRemainingTime ={
-seconds: '10',
+seconds: '00',
 minutes: '00',
 hours: '00',
 days : '00'
@@ -14,7 +14,7 @@ const CountdownTimer = ({countdownTimestampMs}) => {
 const intervalId = setInterval(() => {
     updateRemainingTime(countdownTimestampMs);
 },1000);
-return() => clearInterval(intervalId)
+return() => clearTimeout(intervalId)
     },[countdownTimestampMs])
 
     function updateRemainingTime(countdown) {
