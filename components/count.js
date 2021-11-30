@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 export default function Count() {
   useEffect(() => {
-    const target = new Date("11/30/2021 14:00:00");
+    const target = new Date("12/31/2021 23:59:59");
     const interval = setInterval(() => {
       const now = new Date();
       const difference = target.getTime() - now.getTime();
@@ -35,24 +35,27 @@ if(d <=0 && h <= 0 && m <= 0 && s <= m) {
     <div>
       
       <div className="time-wrapper">
-      {partyTime ? ( <span className="font-semibold text-xl ">Happy New Year!</span> ) :(
+      {partyTime ? ( <div className="text-right inline-block  px-4 py-2 leading-none  text-white  mt-4 lg:mt-0 ">Happy New Year!</div> ) :(
         <div className="timer-inner">
         
           <div className="timer-segment">
-            <span className="time">{days}</span>
-            <span className="label">Days</span>
+            <span className="time text-black bg-white w-10">{days}</span>
+            <span className="label px-1 text-white">Days</span>
           </div>
+         
           <div className="timer-segment">
-            <span className="time">{hours}</span>
-            <span className="label">Hours</span>
+            <span className="time text-black bg-white w-10">{hours}</span>
+            <span className="label px-1 text-white">Hour</span>
           </div>
+        
           <div className="timer-segment">
-            <span className="time">{minutes}</span>
-            <span className="label">Minutes</span>
+            <span className="time text-black bg-white w-10  ">{minutes}</span>
+            <span className="label px-1 text-white">Min</span>
           </div>
+       
           <div className="timer-segment">
-            <span className="time">{seconds}</span>
-            <span className="label"></span>
+            <div className="time text-black bg-white w-10">{seconds}</div>
+            <span className="label text-white ">Sec</span>
           </div>
           
          </div>

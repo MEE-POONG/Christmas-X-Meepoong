@@ -1,6 +1,18 @@
 import React from 'react'
+import { useRecoilState } from 'recoil';
+import firebase from '../firebase';
+// import {addindState} from '../context/Menu';
+import {nameMenuState} from '../context/NameMenu'
+// import {Step} from '../context/Step'
 
-function form() {
+
+const database = firebase.database();
+
+export  default function Forms() {
+    const [nameMenu, SetNamemenu] = useRecoilState(nameMenuState);
+    // const [nameMenu  , SetNameMenu ] = useRecoilState (nameMenuState);
+    // const [step , SetStep] = useRecoilState (stepState);
+    const dataRef = database.ref("/mee");
     return (
         <div>
             <div className="w-full max-w-xs">
@@ -9,7 +21,12 @@ function form() {
       <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="username">
         Username
       </label>
-      <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username"/>
+      <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username"
+      value={nameMenu.name}
+      onChange={(e) =>
+      SetNamemenu({...nameMenu, name: e.target.value})
+    }
+      />
     </div>
     <div className="mb-6">
       <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="password">
@@ -19,12 +36,18 @@ function form() {
       <p className="text-red-500 text-xs italic">Please choose a password.</p>
     </div>
     <div className="flex items-center justify-between">
-      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button"
+       onClick={async (e) => {
+           const data = {nameMenu};
+           console.log(data);
+           await dataRef.push(data);
+          
+       }}
+     
+      >
         Sign In
       </button>
-      <a className="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
-        Forgot Password?
-      </a>
+  
     </div>
 
   </form>
@@ -36,4 +59,4 @@ function form() {
     )
 }
 
-export default form
+

@@ -46,8 +46,30 @@ a {
   justify-content: center;
   align-items: center;
 }
-.countdown-timer span {
-  margin-left: 5px;
-  margin-right: 5px;
+
+
+.timer-inner{
+  color:black;
+  display: flex;
+  border: solid 2px white;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.timer-segment{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0.2rem;
+}
+.time{
+  text-align: center;
+}
+@media only screen and (max-width: 480px) {
+  /* For mobile phones: */
+  .res-one{
+    width: 80%;
+    height: 80%;
+  
+  }
 
 }
