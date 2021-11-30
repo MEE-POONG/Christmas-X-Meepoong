@@ -4,6 +4,7 @@ import Head from "next/head";
 import CardLeft from "../components/CardLeft";
 
 import CountdownTimer from "../components/CountdownTimer";
+import Count from "../components/count";
 
 
 
@@ -20,6 +21,7 @@ export default function Home() {
         <title>Christmas X Meepoong</title>
       </Head>
       <Navbar/>
+  
       <CardLeft/>
     </div>
     
