@@ -5,6 +5,7 @@ import CardLeft from "../components/CardLeft";
 
 
 import Count from "../components/count";
+import ParticleBackground from "./ParticleBackground";
 
 
 
@@ -23,6 +24,7 @@ export default function Home() {
       <Navbar/>
   
       <CardLeft/>
+      <ParticleBackground/> 
     </div>
     
   );

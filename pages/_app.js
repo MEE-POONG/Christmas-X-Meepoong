@@ -7,6 +7,8 @@ function MyApp({ Component, pageProps }) {
     <RecoilRoot>
       <Component {...pageProps} />
     </RecoilRoot>
+
+    
   );
 }
 
