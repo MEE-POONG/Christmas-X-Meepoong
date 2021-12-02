@@ -6,6 +6,7 @@ import CardLeft from "../components/CardLeft";
 
 import Count from "../components/count";
 import ParticleBackground from "./ParticleBackground";
+import Footer from "../components/Footer";
 
 
 
@@ -25,6 +26,8 @@ export default function Home() {
   
       <CardLeft/>
       <ParticleBackground/> 
+
+      <Footer/>
     </div>
     
   );
