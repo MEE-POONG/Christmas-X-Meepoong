@@ -6,10 +6,10 @@ import { motion } from "framer-motion";
 
 export default function Card() {
   return (
-    <div  className="w-full bg-card">
+    <div   className="w-full  bg-card">
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
  
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-1 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-1 z-40 ">
           <div className="w-full bg-white rounded-lg shadow-lg p-12 flex flex-col justify-center items-center z-40">
             <div className="mb-8">
               <Image
@@ -19,7 +19,7 @@ export default function Card() {
                 height={144}
               />
             </div>
-            <div className="text-center">
+            <div  className="text-center ">
               <p className="text-xl text-red-500 font-bold mb-2">
                 ดวงของคุณในปี 2022 (ดูครั้งเดียวพอ){" "}
               </p>

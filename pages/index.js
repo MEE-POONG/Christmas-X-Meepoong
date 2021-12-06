@@ -18,18 +18,19 @@ export default function Home() {
 Aos.init({duration: 2000});
    },[])
   return (
-    <div>
+    <div className="h-screen">
 
       <Head>
         {" "}
         <title>Christmas X Meepoong</title>
       </Head>
     <Navbar />
- <Card/>
+ {/* <Card/> */}
       <CardLeft />
       <CardAds/>
+      
       <Cardtwo/>
-      {/* <ParticleBackground /> */}
+      <ParticleBackground />
 
       <Footer />
     
