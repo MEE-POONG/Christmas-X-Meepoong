@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import Count from "./count";
-import { useEffect, useState } from "react";
+
 
 function navbar() {
   return (
     <div className="">
-      <nav className="flex items-center justify-between flex-wrap bg-black p-6">
+      <nav className="sticky top-0 z-50 flex items-center justify-between flex-wrap bg-black p-6">
         <div className="flex items-center flex-shrink-0 text-white  ">
           <div className="res-one">
             <Image
@@ -24,10 +24,9 @@ function navbar() {
           <Count />
         </div>
       </nav>
-      {/* <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-        <Image src="/assets/bg-bg.jpg" height={400} width={2000} />
-      </div> */}
+    
     </div>
+    
   );
 }
 

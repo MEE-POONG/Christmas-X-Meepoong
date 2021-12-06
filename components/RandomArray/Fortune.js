@@ -1,5 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
+import { motion } from "framer-motion"
 
 export default function Fortune() {
   const _ = require("lodash");
@@ -59,17 +60,43 @@ export default function Fortune() {
   const shuffled_array3 = _.shuffle(array3);
   const num3 = Math.floor(Math.random(array3) * array3.length);
   return (
-    <div>
-      <p className="text-base text-gray-600 font-normal border border-2 border-black rounded-lg mt-5 p-5 ">
+    <motion.div initial={{opacity :0}} animate ={{opacity : 1 ,transition: {duration:1.2,delay : 0.3}}}>
+
+      <motion.div 
+      initial={{ scale: 0 }}
+      animate={{  scale: 1 }}
+      whileHover={{ scale: 1.1 }}
+      transition={{
+        type: "spring",
+        stiffness: 260,
+        damping: 20
+      }}
+      className="text-base text-gray-600 font-normal border border-2 border-black rounded-lg mt-5 p-5 ">
         {shuffled_array1[num1]}
-      </p>
-      <p className="text-base text-gray-600 font-normal border border-2 border-black rounded-lg mt-5 p-5 ">
+      </motion.div>
+      <motion.div
+       initial={{ scale: 0 }}
+       animate={{  scale: 1 }}
+       whileHover={{ scale: 1.1 }}
+       transition={{
+         type: "spring",
+         stiffness: 260,
+         damping: 20
+       }}className="text-base text-gray-600 font-normal border border-2 border-black rounded-lg mt-5 p-5 ">
         {shuffled_array2[num2]}
-      </p>
-      <p className="text-base text-gray-600 font-normal border border-2 border-black rounded-lg mt-5 p-5 ">
+      </motion.div>
+      <motion.div
+        initial={{ scale: 0 }}
+        animate={{  scale: 1 }}
+        whileHover={{ scale: 1.1 }}
+        transition={{
+          type: "spring",
+          stiffness: 260,
+          damping: 20
+        }}className="text-base text-gray-600 font-normal border border-2 border-black rounded-lg mt-5 p-5 ">
         {shuffled_array3[num3]}
-      </p>
+      </motion.div>
       <hr></hr>
-    </div>
+    </motion.div>
   );
 }

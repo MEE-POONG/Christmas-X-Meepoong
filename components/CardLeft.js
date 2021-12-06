@@ -2,13 +2,15 @@
 import React from "react";
 import Image from "next/image";
 import Pray from "./RandomArray/modal";
+import { motion } from "framer-motion";
 
 export default function Card() {
   return (
-    <div className="w-full bg-card">
+    <div  className="w-full bg-card">
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
+ 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-1 ">
-          <div className="w-full bg-white rounded-lg shadow-lg p-12 flex flex-col justify-center items-center z-50">
+          <div className="w-full bg-white rounded-lg shadow-lg p-12 flex flex-col justify-center items-center z-40">
             <div className="mb-8">
               <Image
                 className="object-center object-cover rounded-full "
@@ -29,6 +31,7 @@ export default function Card() {
             </div>
           </div>
         </div>
+     
       </section>
     </div>
   );
