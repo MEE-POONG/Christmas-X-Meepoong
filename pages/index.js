@@ -10,6 +10,7 @@ import { useEffect } from "react";
 import Aos from "aos";
 import Card from "../components/card";
 import Cardtwo from "../components/Cardtwo";
+import Scrollbar from "react-scrollbars-custom";
 
 
   
@@ -18,7 +19,10 @@ export default function Home() {
 Aos.init({duration: 2000});
    },[])
   return (
-    <div className="h-screen">
+  
+
+
+    <div className="h-screen ">
 
       <Head>
         {" "}
@@ -35,5 +39,6 @@ Aos.init({duration: 2000});
       <Footer />
     
     </div>
+
   );
 }
