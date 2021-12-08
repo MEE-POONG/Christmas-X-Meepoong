@@ -77,7 +77,8 @@ a {
   background-image: url("/assets/bg2.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
+ 
 
 }
 .container {
@@ -85,4 +86,8 @@ a {
   height: 150px;
   background: white;
   border-radius: 30px;
+}
+.bg-snow
+{
+  background: #F0EDE7;
 }

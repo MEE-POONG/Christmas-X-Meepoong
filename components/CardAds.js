@@ -20,7 +20,7 @@ className="relative pt-12 bg-blueGray-50 z-40 ">
 <div className="items-center flex flex-wrap " >
   <motion.div 
      
-       whileHover={{ scale: 1.1 }}
+       whileHover={{ scale: 1.02 }}
        transition={{
          type: "spring",
          stiffness: 260,
@@ -32,7 +32,7 @@ className="relative pt-12 bg-blueGray-50 z-40 ">
     data-aos-mirror="true"
     data-aos-once="false" className="w-full md:w-4/12 ml-auto mr-auto px-4">
 
-    <img alt="..." className="max-w-full rounded-lg shadow-lg" src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80"/>
+    <Image className="max-w-full rounded-lg shadow-lg" src="/assets/mee.jpg" width={1000} height={1000}/>
 
   </motion.div>
   <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
@@ -76,7 +76,7 @@ className="relative pt-12 bg-blueGray-50 z-40 ">
               <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-black mr-3"><i className="fas fa-fingerprint"></i></span>
             </div>
             <div>
-              <h4 className="text-blueGray-500">
+              <h4 className="text-blue-700">
                 รับงานออกแบบเว็บไซต์
               </h4>
             </div>
@@ -88,7 +88,7 @@ className="relative pt-12 bg-blueGray-50 z-40 ">
               <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-black mr-3"><i className="fab fa-html5"></i></span>
             </div>
             <div>
-              <h4 className="text-blueGray-500">สร้างแอปพลิเคชั่น</h4>
+              <h4 className="text-blue-700">สร้างแอปพลิเคชั่น</h4>
             </div>
           </div>
         </li>
@@ -98,7 +98,7 @@ className="relative pt-12 bg-blueGray-50 z-40 ">
               <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-black  mr-3"><i className="far fa-paper-plane"></i></span>
                 </div>
             <div>
-              <h4 className="text-blueGray-500">รองรับทุกแพลทฟอร์ม</h4>
+              <h4 className="text-blue-700">รองรับทุกแพลทฟอร์ม</h4>
             </div>
           </div>
         </li>

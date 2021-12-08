@@ -96,7 +96,6 @@ export default function Fortune() {
         }}className="text-base text-gray-600 font-normal border border-2 border-black rounded-lg mt-5 p-5 ">
         {shuffled_array3[num3]}
       </motion.div>
-      <hr></hr>
-    </motion.div>
+        </motion.div>
   );
 }

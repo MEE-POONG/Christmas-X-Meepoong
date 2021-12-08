@@ -34,7 +34,7 @@ Aos.init({duration: 2000});
       <CardAds/>
       
       <Cardtwo/>
-      <ParticleBackground />
+     <div className="z-0"> <ParticleBackground /></div>
 
       <Footer />
     
