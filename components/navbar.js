@@ -3,11 +3,15 @@ import Image from "next/image";
 import Count from "./count";
 
 
+
 function navbar() {
   return (
     <div className=" sticky top-0 z-50">
+     
       <nav className=" flex items-center justify-between flex-wrap bg-black p-6 z-50">
+  
         <div className="flex items-center flex-shrink-0 text-white  z-50 ">
+          
           <div className="res-one">
             <Image
               className=""

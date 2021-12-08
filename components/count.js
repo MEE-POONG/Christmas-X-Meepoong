@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Par from '../pages/Par'
 
 export default function Count() {
   useEffect(() => {
@@ -32,10 +33,14 @@ export default function Count() {
   return (
     <div>
       <div className="time-wrapper">
-        {partyTime ? (
-          <div className="text-right inline-block  px-4 py-2 leading-none  text-white  mt-4 lg:mt-0 ">
-            Happy New Year!
-          </div>
+      
+      {partyTime ? (
+        <div>
+        <div className=" py-24 w-full bg-white fixed top-0 left-0 bg-black flex items-center justify-center  bg-opacity-50 transform transition-transform duration-300 insert-0 text-right inline-block  px-4 py-2 leading-none  text-white    ">
+          <h5>Happy New Year!</h5>
+          <Par/>
+     
+        </div></div>
         ) : (
           <div className="timer-inner">
             <div className="timer-segment">
