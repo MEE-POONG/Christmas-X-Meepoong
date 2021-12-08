@@ -2,7 +2,8 @@
 import React from "react";
 import Image from "next/image";
 import Pray from "./RandomArray/modal";
-import { motion } from "framer-motion";
+
+
 
 export default function Card() {
   return (

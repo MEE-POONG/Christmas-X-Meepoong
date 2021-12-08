@@ -5,9 +5,10 @@ export default function CardAds() {
     return (
 
 
+<div className=''>
 
-<section   data-aos="fade-right"
-data-aos-duration="500" 
+<section   data-aos="fade-up"
+data-aos-duration="20000" 
     data-aos-offset="200"
     data-aos-easing="ease-in-out"
     data-aos-mirror="true"
@@ -17,16 +18,16 @@ data-aos-duration="500"
 
 className="relative pt-12 bg-blueGray-50 z-40 ">
 
+
 <div className="items-center flex flex-wrap " >
-  <motion.div 
-     
+  <motion.div    
        whileHover={{ scale: 1.02 }}
        transition={{
          type: "spring",
          stiffness: 260,
          damping: 20
-       }}data-aos="flip-left"
-      data-aos-duration="500" 
+       }}data-aos="fade-up"
+      data-aos-duration="5000" 
     data-aos-offset="200"
     data-aos-easing="ease-in-out"
     data-aos-mirror="true"
@@ -38,8 +39,8 @@ className="relative pt-12 bg-blueGray-50 z-40 ">
   <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
     <div className="md:pr-12">
 
-      <div data-aos="zoom-in"
-      data-aos-duration="1000" 
+      <div data-aos="fade-up"
+      data-aos-duration="5000" 
     data-aos-offset="200"
     data-aos-easing="ease-in-out"
     data-aos-mirror="true"
@@ -50,22 +51,22 @@ className="relative pt-12 bg-blueGray-50 z-40 ">
       </div>
     
    
-      <h3 data-aos="zoom-in"
-      data-aos-duration="500" 
+      <h3 data-aos="fade-up"
+      data-aos-duration="5000" 
     data-aos-offset="200"
     data-aos-easing="ease-in-out"
     data-aos-mirror="true"
     data-aos-once="false"className="text-3xl font-semibold">WHO ARE WE?</h3>
-      <p data-aos="zoom-in"
-      data-aos-duration="500" 
+      <p data-aos="fade-up"
+      data-aos-duration="5000" 
     data-aos-offset="200"
     data-aos-easing="ease-in-out"
     data-aos-mirror="true"
     data-aos-once="false"className="mt-4 text-lg leading-relaxed text-blueGray-500">
       เรามีบริการทางด้านเทคโนโลยีที่ทันสมัยสำหรับองค์กร และผู้ใช้งานจริงเพื่อส่งเสริมระบบการทำงานปัจจุบันของคุณและก่อให้เกิดการพัฒนาและเปลี่ยนแปลงอย่างต่อเนื่องเพิ่มขีดความสามารถขององค์กรคุณให้พร้อมรับมือได้ทุกสถานการณ์เพราะเราเชื่อว่าการพัฒนากระบวนการทำงานด้วยเทคโนโลยีและนวัตกรรมเป็นสิ่งที่จำเป็นและสำคัญมากในอนาคต
       </p>
-      <ul data-aos="zoom-in"
-      data-aos-duration="500" 
+      <ul data-aos="fade-up"
+      data-aos-duration="5000" 
     data-aos-offset="200"
     data-aos-easing="ease-in-out"
     data-aos-mirror="true"
@@ -108,5 +109,6 @@ className="relative pt-12 bg-blueGray-50 z-40 ">
 </div>
 
 </section>
+</div>
     )
 }

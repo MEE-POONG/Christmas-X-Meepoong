@@ -1,12 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { BsFacebook,BsLine,BsInstagram} from 'react-icons/bs';
+
 
 export default function CardAds() {
   return (
     <section
-      data-aos="fade-right"
-      data-aos-duration="500"
+    data-aos="fade-up"
+    data-aos-duration="20000" 
       data-aos-offset="200"
       data-aos-easing="ease-in-out"
       data-aos-mirror="true"
@@ -18,8 +20,8 @@ export default function CardAds() {
         <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
           <div className="md:pr-12">
             <div
-              data-aos="zoom-in"
-              data-aos-duration="1000"
+              data-aos="fade-up"
+              data-aos-duration="5000"
               data-aos-offset="200"
               data-aos-easing="ease-in-out"
               data-aos-mirror="true"
@@ -31,8 +33,8 @@ export default function CardAds() {
             </div>
 
             <h3
-              data-aos="zoom-in"
-              data-aos-duration="500"
+              data-aos="fade-up"
+              data-aos-duration="5000"
               data-aos-offset="200"
               data-aos-easing="ease-in-out"
               data-aos-mirror="true"
@@ -42,58 +44,66 @@ export default function CardAds() {
               อยากมีเว็บไซต์หน้าร้าน รองรับทุกแพลทฟอร์ม 
             </h3>
             <p
-              data-aos="zoom-in"
-              data-aos-duration="500"
+              data-aos="fade-up"
+              data-aos-duration="5000"
               data-aos-offset="200"
               data-aos-easing="ease-in-out"
               data-aos-mirror="true"
               data-aos-once="false"
-              className="mt-4 text-lg leading-relaxed text-blue-500"
+              className="mt-4 text-lg leading-relaxed text-black pb-6 "
             >
               มองหาคนทำเว็บ  อยากมีเว็บไซต์หน้าร้าน ปรึกษาเรามีพุง กับราคาสบายกระเป๋า เริ่มต้นที่ 5,500 ฿ หรือสนใจติดต่อสอบถามเพิ่มเติม 
             </p>
-            <ul
-              data-aos="zoom-in"
-              data-aos-duration="500"
+            <ul >
+              <li className="" data-aos="fade-up"
+              data-aos-duration="5000"
               data-aos-offset="200"
               data-aos-easing="ease-in-out"
               data-aos-mirror="true"
-              data-aos-once="false"
-              className="list-none mt-6"
-            >
-              <li className="py-2">
+              data-aos-once="false">
                 <div className="flex items-center">
-                  <div>
-                    <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-black mr-3">
-                      <i className="fas fa-fingerprint"></i>
+                  <div >
+                    <span className="text-xl text-blue-500 font-semibold px-8  py-1  inline-block" >
+                    <a href="https://www.facebook.com/meepoong">     <BsFacebook/></a>
                     </span>
                   </div>
                   <div>
-                    <h4 className="text-blue-700">รับงานออกแบบเว็บไซต์</h4>
+               <a href="https://www.facebook.com/meepoong">   <h4  className="text-black">Mee Poong Group - รับทำเว็บไซต์ กราฟิกดีไซน์</h4></a>  
                   </div>
                 </div>
               </li>
-              <li className="py-2">
+              <li className="" data-aos="fade-up"
+              data-aos-duration="5000"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false">
                 <div className="flex items-center">
                   <div>
-                    <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-black mr-3">
-                      <i className="fab fa-html5"></i>
+                  <span className="text-xl text-green-500 font-semibold uppercase  py-1 px-8 inline-block"
+                  >
+                    <a href="https://lin.ee/bIG6HiG">  <BsLine/></a>
                     </span>
                   </div>
                   <div>
-                    <h4 className="text-blue-700">สร้างแอปพลิเคชั่น</h4>
+                  <a href="https://lin.ee/bIG6HiG"> <h4 className="text-black">Mee Poong Group</h4></a> 
                   </div>
                 </div>
               </li>
-              <li className="py-2">
+              <li className="" data-aos="fade-up"
+              data-aos-duration="5000"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false">
                 <div className="flex items-center">
                   <div>
-                    <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-black  mr-3">
-                      <i className="far fa-paper-plane"></i>
+                  <span className="text-xl text-indigo-800 font-semibold uppercase   py-1 px-8  inline-block">
+                  <a href="https://www.instagram.com/meepoonggroup/">  <BsInstagram/> </a>
                     </span>
                   </div>
                   <div>
-                    <h4 className="text-blue-700">รองรับทุกแพลทฟอร์ม</h4>
+                <a href="https://www.instagram.com/meepoonggroup/"> <h4 className="text-black">meepoonggroup</h4></a>   
                   </div>
                 </div>
               </li>
@@ -110,7 +120,7 @@ export default function CardAds() {
             damping: 20,
           }}
           data-aos="flip-left"
-          data-aos-duration="500"
+          data-aos-duration="8000"
           data-aos-offset="200"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
