@@ -69,18 +69,21 @@ a {
   .res-one{
     width: 80%;
     height: 80%;
-  
   }
+
+  
 
 }
 .bg-card {
   background-image: url("/assets/bg2.png");
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
+  height: 100%;
  
 
 }
+
 .container {
   width: 150px;
   height: 150px;

@@ -15,9 +15,9 @@ export default function Card() {
             <div className="mb-8 -mt-28">
               <Image
                 className="object-center object-cover rounded-full "
-                src="/assets/ch1-01.png"
-                width={144}
-                height={144}
+                src="/assets/ch5-01.png"
+                width={200}
+                height={200}
               />
             </div>
             <div  className="text-center ">

@@ -3,7 +3,7 @@ import Par from '../pages/Par'
 
 export default function Count() {
   useEffect(() => {
-    const target = new Date("12/31/2020 23:59:59");
+    const target = new Date("12/31/2021 23:59:59");
     const interval = setInterval(() => {
       const now = new Date();
       const difference = target.getTime() - now.getTime();
@@ -38,7 +38,7 @@ export default function Count() {
         <div>
         <div className=" py-24 w-full bg-white fixed top-0 left-0 bg-black flex items-center justify-center  bg-opacity-50 transform transition-transform duration-300 insert-0 text-right inline-block  px-4 py-2 leading-none  text-white  w-screen h-screen  ">
           <span className="z-40 text-9xl" >Happy New Year !</span>
-          <a className="z-40 text-9xl" href="/" >ออก</a>
+   
    
 
          <div className="z-0"> <Par/></div>

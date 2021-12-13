@@ -16,10 +16,10 @@ data-aos-duration="20000"
 
 
 
-className="relative pt-12 bg-blueGray-50 z-40 ">
+className="relative pt-12 bg-blueGray-50 z-40  ">
 
 
-<div className="items-center flex flex-wrap " >
+<div className="items-center flex flex-wrap  py-5" >
   <motion.div    
        whileHover={{ scale: 1.02 }}
        transition={{
@@ -33,7 +33,7 @@ className="relative pt-12 bg-blueGray-50 z-40 ">
     data-aos-mirror="true"
     data-aos-once="false" className="w-full md:w-4/12 ml-auto mr-auto px-4">
 
-    <Image className="max-w-full rounded-lg shadow-lg" src="/assets/mee.jpg" width={1000} height={1000}/>
+    <Image className="max-w-full rounded-lg shadow-lg" src="/assets/go.jpg" width={1000} height={1000}/>
 
   </motion.div>
   <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
@@ -44,9 +44,9 @@ className="relative pt-12 bg-blueGray-50 z-40 ">
     data-aos-offset="200"
     data-aos-easing="ease-in-out"
     data-aos-mirror="true"
-    data-aos-once="false"className=" p-3 text-center inline-flex items-center justify-center w-40 h-40 mb-6 shadow-lg rounded-full bg-black mt-8">
+    data-aos-once="false"className=" p-3 text-center inline-flex items-center justify-center w-40 h-40 mb-6 rounded-full  mt-8">
 
-      <Image  className="max-w-full rounded-lg shadow-lg" src="/assets/logo.webp" width = {150} height = {120} />
+      <Image  className="max-w-full rounded-lg " src="/assets/ch2-01.png" width = {250} height = {250} />
 
       </div>
     

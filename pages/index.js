@@ -10,6 +10,7 @@ import { useEffect } from "react";
 import Aos from "aos";
 import Card from "../components/card";
 import Cardtwo from "../components/Cardtwo";
+import Hero from "../components/Hero";
 
 
 
@@ -36,7 +37,7 @@ Aos.init({duration: 2000});
       
       <Cardtwo/>
      <div className="z-0"> <ParticleBackground /></div>
-
+{/* <Hero/> */}
       <Footer />
     
     </div>

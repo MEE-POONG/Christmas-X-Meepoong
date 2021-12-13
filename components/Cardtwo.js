@@ -13,7 +13,7 @@ export default function CardAds() {
       data-aos-easing="ease-in-out"
       data-aos-mirror="true"
       data-aos-once="false"
-      className="relative pt-12 bg- z-40 pt-10 "
+      className="relative pt-12 bg- z-40 pt-10 mt-4  "
     >
       <div className="items-center flex flex-wrap gird grid-cols-2 ">
         
@@ -26,10 +26,10 @@ export default function CardAds() {
               data-aos-easing="ease-in-out"
               data-aos-mirror="true"
               data-aos-once="false"
-              className=" p-3 text-center inline-flex items-center justify-center w-40 h-40 mb-6 shadow-lg rounded-full bg-black mt-8"
+              className=" p-3 text-center inline-flex items-center justify-center w-40 h-40 mb-6  rounded-full bg-white mt-8"
             >
         
-      <Image  className="max-w-full rounded-lg shadow-lg" src="/assets/logo.webp" width = {150} height = {120} />
+      <Image  className="max-w-full rounded-lg shadow-lg" src="/assets/ch4-01.png" width = {250} height = {260} />
             </div>
 
             <h3
