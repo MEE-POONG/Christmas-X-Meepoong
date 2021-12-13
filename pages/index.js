@@ -11,6 +11,7 @@ import Aos from "aos";
 import Card from "../components/card";
 import Cardtwo from "../components/Cardtwo";
 import Hero from "../components/Hero";
+import Dashboard from "../components/Dashboard";
 
 
 
@@ -39,7 +40,7 @@ Aos.init({duration: 2000});
      <div className="z-0"> <ParticleBackground /></div>
 {/* <Hero/> */}
       <Footer />
-    
+    <Dashboard/>
     </div>
 
   );
