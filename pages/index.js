@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 import CardAds from "../components/CardAds";
 import "aos/dist/aos.css";
 import Cardtwo from "../components/Cardtwo";
-import Dashboard from "../components/Dashboard";
+
 
 export default function Home() {
   return (
@@ -27,7 +27,7 @@ export default function Home() {
       </div>
 
       <Footer />
-      <Dashboard />
+ 
     </div>
   );
 }
