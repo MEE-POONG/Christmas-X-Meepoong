@@ -17,10 +17,11 @@ export default function Home() {
       </Head>
       <Navbar />
 
-      <CardLeft />
+      <CardLeft /> 
+    
       <CardAds />
 
-      <Cardtwo />
+      <Cardtwo /> 
       <div className="z-0">
         {" "}
         {/* <ParticleBackground /> */}

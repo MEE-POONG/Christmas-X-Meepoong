@@ -9,8 +9,7 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
-    "firebase": "3.9.0",
-    "fireworks": "^2.2.7",
+    "firebase": "^9.6.1",
     "framer-motion": "^5.3.3",
     "next": "^12.0.4",
     "react": "^17.0.2",
