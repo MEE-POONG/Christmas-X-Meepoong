@@ -129,7 +129,7 @@ export default function CardAds() {
         >
           <Image
             className="max-w-full rounded-lg shadow-lg"
-            src="/assets/pack.jpg"
+            src="/pack.jpg"
             width={1000}
             height={1000}
           />

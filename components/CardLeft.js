@@ -10,7 +10,7 @@ export default function Card() {
     <div   className="w-full  bg-card">
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 py-24">
  
-        <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-1 z-40 ">
+        <div className="grid grid-cols-2  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-1 z-40 ">
           <div className=" w-full bg-snow rounded-lg shadow-lg p-12 flex flex-col justify-center items-center z-40">
             <div className="mb-8 -mt-28">
               <Image
@@ -30,6 +30,7 @@ export default function Card() {
               </div>
             </div>
           </div>
+          
         </div>
      
       </section>

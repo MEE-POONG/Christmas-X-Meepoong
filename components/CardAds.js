@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { motion } from "framer-motion";
+
 export default function CardAds() {
     return (
 
@@ -47,6 +48,7 @@ className="relative pt-12 bg-blueGray-50 z-40  ">
     data-aos-once="false"className=" p-3 text-center inline-flex items-center justify-center w-40 h-40 mb-6 rounded-full  mt-8">
 
       <Image  className="max-w-full rounded-lg " src="/assets/ch2-01.png" width = {250} height = {250} />
+ 
 
       </div>
     
