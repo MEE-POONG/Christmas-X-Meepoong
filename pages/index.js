@@ -9,7 +9,7 @@ import Cardtwo from "../components/Cardtwo";
 import Aos from "aos";
 import 'aos/dist/aos.css'
 import Signin from "../components/Signin";
-import Chat from "../components/Chat";
+
 
   const Sliding = () => {
     useEffect(() => {

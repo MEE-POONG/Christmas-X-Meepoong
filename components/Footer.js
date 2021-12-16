@@ -23,7 +23,7 @@ function Footer() {
         <div className="flex items-center justify-between my-4 z-40">
             <p className="text-black">All rights reserved</p>
             <p className="inline-flex text-black px-2 pt-6">
-               <div className="res-one"> <Image src = "/assets/logo.webp" width={50} height={30} fill="#e53e3e" viewBox="0 0 24 24"  className="w-5 h-5 mx-1 pt-px text-red-600" stroke="currentColor"/> </div>
+               <div className="res-one"> <Image src = "/" width={50} height={30} fill="#e53e3e" viewBox="0 0 24 24"  className="w-5 h-5 mx-1 pt-px text-red-600" stroke="currentColor"/> </div>
                     Copyright by 2021 MEE POONG CO., LTD</p>
             <div className="flex items-center">
                 <a href="https://www.facebook.com/meepoong">

@@ -2,7 +2,8 @@ import React,{useState,useEffect} from 'react'
 import firebase from 'firebase'
 import { db,auth } from '../firebase'
 import { useAuthState } from "react-firebase-hooks/auth";
-
+import Image from 'next/image';
+import {FcGoogle} from 'react-icons/fc'
 
 
 
@@ -23,18 +24,29 @@ function Signin() {
         auth.signInWithPopup(sign)
     }
     return (
-        
-        <div style={{ display: 'flex', justifyContent: 'center', height: '100vh', alignItems: 'center' }}>
-            <button style={{ padding: '30px', fontSize: '20px', borderRadius: '0', fontWeight: '600' }} onClick={signInWithGoogle}>Sign In With Google </button>
+<div className="w-full h-screen p-4 flex justify-center bg-gray-100 mt-10 items-center">
+    <main className="w-full md:w-5/6 xl:w-4/6 h-9/10 flex items-center bg-gray-100 rounded-lg font-mono">
+        <div className="w-full sm:w-1/2 md:w-1/3 p-10 grid grid-cols-1 space-y-4">
+        <Image src="/BG.jpg" width ={800} height = {800} />
+            <span className=" text-center font-bold text-4xl">Meepoong Chat</span>
+            <div className="space-y-2">
+     
+            <button className="bg-black text-2xl text-white w-full p-2 flex flex-row justify-center gap-2 items-center hover:bg-indigo-900 duration-100 ease-in-out" onClick={signInWithGoogle}>
+             <FcGoogle/> Sign In With Google </button>  
+            </div>
         </div>
-    )
+        <div className="hidden sm:inline sm:w-1/2 md:w-2/3 p-10 md:p-20">
+        </div>
+    </main>
+</div>      
+    ) 
 }
 
 function SignOut() {
     return (
       auth.currentUser && (
         <div>
-          <button onClick={() => auth.signOut()}>Sign Out </button>
+          <button className="bg-black text-2xl text-white w-full p-2 flex flex-row justify-center gap-2 items-center hover:bg-indigo-900 duration-100 ease-in-out" onClick={() => auth.signOut()}>Sign Out </button>
         </div>
       )
     );
@@ -48,8 +60,21 @@ function Chat() {
         })
     },[])
     return (
+
+        
         <div className='msgs'> 
+        <div className="w-full h-screen p-4 flex justify-center bg-gray-100 mt-10 items-center">
+    <main className="w-full md:w-5/6 xl:w-4/6 h-9/10 flex grid grid-cols-2 gap-2 items-center bg-gray-100 rounded-lg font-mono">
+        <div className="w-full sm:w-1/2 md:w-1/3 p-10 grid grid-cols-1 space-y-4">
+        <Image src="/BG.jpg" width ={800} height = {800} />
+            <span className=" text-center font-bold text-4xl">Meepoong Chat</span>
+            <div className="space-y-2">
             <SignOut/>
+      
+            </div>
+        </div>
+        <div className="hidden sm:inline sm:w-1/2 md:w-2/3 p-10 md:p-20">
+       
             <div>
         {messages.map(({id,text,photoURL,uid})=> (
             <div key={id} className={`msg ${uid === auth.currentUser.uid ? 'sent' : 'received'}`}>
@@ -60,6 +85,10 @@ function Chat() {
         </div>
         <SendMessage/>
         </div>
+    </main>
+</div> 
+   </div>       
+    
     )
 }
 
