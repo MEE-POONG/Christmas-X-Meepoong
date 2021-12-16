@@ -11,12 +11,6 @@ import 'aos/dist/aos.css'
 import Signin from "../components/Signin";
 import Chat from "../components/Chat";
 
-
-
-
-
-
-
   const Sliding = () => {
     useEffect(() => {
     Aos.init({duration : 2000});
@@ -36,7 +30,7 @@ import Chat from "../components/Chat";
 
       <Cardtwo /> 
       <Signin/>
-      <Chat/>
+
       <div className="z-0">
         {" "}
         {/* <ParticleBackground /> */}
