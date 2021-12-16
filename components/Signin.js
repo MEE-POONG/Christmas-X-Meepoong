@@ -24,8 +24,8 @@ function Signin() {
     }
     return (
         
-        <div>
-            <button onClick={signInWithGoogle}>Sign In With Google </button>
+        <div style={{ display: 'flex', justifyContent: 'center', height: '100vh', alignItems: 'center' }}>
+            <button style={{ padding: '30px', fontSize: '20px', borderRadius: '0', fontWeight: '600' }} onClick={signInWithGoogle}>Sign In With Google </button>
         </div>
     )
 }
@@ -52,7 +52,7 @@ function Chat() {
             <SignOut/>
             <div>
         {messages.map(({id,text,photoURL,uid})=> (
-<div key={id} className={'msg ${uid == auth.currentUser ? get : receievd }'}>
+            <div key={id} className={`msg ${uid === auth.currentUser.uid ? 'sent' : 'received'}`}>
 <img src={photoURL} />
 <p>{text}</p>
 </div>
@@ -81,8 +81,9 @@ function SendMessage() {
     return (
         <div>
             <form onSubmit={sendMessage}>
-                  <input value={msg} onChange={(e) => setMsg(e.target.value)} placeholder=''/>
+               <input value={msg} onChange={(e) => setMsg(e.target.value)} placeholder=''/>
                 <button type="submit" >Send</button>
+            
             </form>
         </div>
     )
