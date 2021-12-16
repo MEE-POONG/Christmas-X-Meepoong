@@ -8,8 +8,7 @@ import CardAds from "../components/CardAds";
 import Cardtwo from "../components/Cardtwo";
 import Aos from "aos";
 import 'aos/dist/aos.css'
-import Form from "../components/Form";
-import TodoList from "../components/TodoList";
+
 
 
 
@@ -36,8 +35,7 @@ import TodoList from "../components/TodoList";
       <div className="z-0">
         {" "}
         {/* <ParticleBackground /> */}
-        <Form/>
-        <TodoList/>
+    
  
       </div>
 
