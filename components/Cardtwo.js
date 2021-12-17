@@ -13,7 +13,7 @@ export default function CardAds() {
       data-aos-easing="ease-in-out"
       data-aos-mirror="true"
       data-aos-once="false"
-      className="relative pt-12 bg- z-40 pt-10 mt-4  "
+      className="relative pt-12  z-40 pt-10 mt-4 bg-gray-50 -mt-1  "
     >
       <div className="items-center flex flex-wrap gird grid-cols-2 ">
         

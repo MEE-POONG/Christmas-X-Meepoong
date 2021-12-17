@@ -17,10 +17,10 @@ data-aos-duration="20000"
 
 
 
-className="relative pt-12 bg-blueGray-50 z-40  ">
+className="relative pt-12 0 z-40 -mt-12 ">
 
 
-<div className="items-center flex flex-wrap  py-5" >
+<div className="items-center flex flex-wrap  py-5 bg-gray-100" >
   <motion.div    
        whileHover={{ scale: 1.02 }}
        transition={{
