@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-
+import "bootstrap/dist/css/bootstrap.css";
 import "tailwindcss/tailwind.css";
 import { RecoilRoot } from "recoil";
 

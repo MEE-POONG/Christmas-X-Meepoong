@@ -4,7 +4,7 @@ import Wave from 'react-wavify'
 
 function Footer() {
   return (
-<div className="-mt-8" data-aos="fade-right"
+<div className="lg:-mt-8" data-aos="fade-right"
     data-aos-duration="100"  >
 <Wave fill='#F0EDE7'
          data-aos="flip-left"

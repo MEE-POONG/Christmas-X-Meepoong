@@ -44,7 +44,7 @@ export default function Fortune() {
   const num2 = Math.floor(Math.random(array2) * array2.length);
 
   const array3 = [
-    " การเงิน : ค่าใช้จ่ายของคุณยังคงเยอะอยู่ อาจมีค่าใช้จ่ายเกี่ยวกับบุตร บริวารเข้ามามากขึ้น และอาจมีรายจ่ายแอบแฝงเยอะ ต้องระวังการหมุนเงินไม่ค่อยทันในช่วงปลายเดือนอีกด้วย และต้องพยายามกันเงินสำรองเอาไว้มากหน่อย ",
+    "การเงิน : ค่าใช้จ่ายของคุณยังคงเยอะอยู่ อาจมีค่าใช้จ่ายเกี่ยวกับบุตร บริวารเข้ามามากขึ้น และอาจมีรายจ่ายแอบแฝงเยอะ ต้องระวังการหมุนเงินไม่ค่อยทันในช่วงปลายเดือนอีกด้วย และต้องพยายามกันเงินสำรองเอาไว้มากหน่อย ",
     "การเงิน : คุณจะมีค่าใช้จ่ายเกี่ยวกับบ้าน หรือคนในครอบครัวเข้ามา อาจเป็นค่าใช้จ่ายก้อนใหญ่กว่าที่คุณคิดไว้อยู่สักหน่อย แต่ตัวคุณเอง ก็จะมีรายรับเข้ามามากขึ้นกว่าเดิมด้วยเช่นกัน หรืออาจมีนายทุนอยากลงทุนกับคุณได้ ",
     "การเงิน : คุณเตรียมใจไว้แล้วว่าจะใช้เงินมากกว่าที่ผ่านมา โดยที่คุณอาจใช้เงินไปกับการเดินทาง หรือไม่ได้วางแผนเรื่องการเงินสักเท่าไหร่ แต่ต้องระวังว่าเงินจะไหลออกเร็วมาก จนหมุนเงินไม่ทันได้ด้วยเช่นกัน ",
     "การเงิน : ค่าใช้จ่ายของคุณจะมากกว่ารายรับประมาณหนึ่ง เนื่องจากอะไรหลายๆ อย่างไม่ได้เป็นไปอย่างที่วางแผน ต้องระวังการถูกจ่ายเงินช้าจากงวดที่ผ่านมา ทำให้คุณอาจต้องนำเงินเก็บออกมาใช้ไปก่อน  ",
@@ -71,7 +71,7 @@ export default function Fortune() {
         stiffness: 260,
         damping: 20
       }}
-      className="text-base text-gray-600 font-normal border border-2 border-black rounded-lg mt-5 p-5 ">
+      className="text-base text-gray-600 font-normal border border-2 border-black rounded-lg mb-4 p-2 ">
         {shuffled_array1[num1]}
       </motion.div>
       <motion.div
@@ -82,7 +82,7 @@ export default function Fortune() {
          type: "spring",
          stiffness: 260,
          damping: 20
-       }}className="text-base text-gray-600 font-normal border border-2 border-black rounded-lg mt-5 p-5 ">
+       }}className="text-base text-gray-600 font-normal border border-2 border-black rounded-lg mb-4 p-2 ">
         {shuffled_array2[num2]}
       </motion.div>
       <motion.div
@@ -93,7 +93,7 @@ export default function Fortune() {
           type: "spring",
           stiffness: 260,
           damping: 20
-        }}className="text-base text-gray-600 font-normal border border-2 border-black rounded-lg mt-5 p-5 ">
+        }}className="text-base text-gray-600 font-normal border border-2 border-black rounded-lg mb-4 p-2  ">
         {shuffled_array3[num3]}
       </motion.div>
         </motion.div>

@@ -24,7 +24,7 @@ import Signin from "../components/Signin";
       </Head>
       <Navbar />
 
-      <CardLeft /> 
+      <CardLeft />  
     
       <CardAds />
 

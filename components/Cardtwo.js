@@ -133,7 +133,11 @@ export default function CardAds() {
             width={1000}
             height={1000}
           />
+          
         </motion.div>
+
+     
+
 
       </div>
     </section>

@@ -2,16 +2,17 @@
 import React from "react";
 import Image from "next/image";
 import Pray from "./RandomArray/modal";
+import Count from "./count";
 
 
 
 export default function Card() {
   return (
-    <div   className="w-full  bg-card">
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 py-24">
+    <div   className="py-24 w-full  bg-card lg:h-screen sm:h-1/2 md:h-screen">
+      <section className=" lg:max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 py-24">
  
-        <div className="grid grid-cols-2  sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-1 z-40 ">
-          <div className=" w-full bg-snow rounded-lg shadow-lg p-12 flex flex-col justify-center items-center z-40">
+        <div className="grid   sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-1 z-40 ">
+          <div className=" w-full bg-gray-100 rounded-lg shadow-lg p-12 flex flex-col justify-center items-center z-40">
             <div className="mb-8 -mt-28">
               <Image
                 className="object-center object-cover rounded-full "
@@ -27,10 +28,14 @@ export default function Card() {
 
               <div className="mt-2">
                 <Pray />
+
+
               </div>
             </div>
           </div>
-          
+          <div className="  md:text-center sm:block md:block lg:hidden ">
+          <Count />
+        </div>
         </div>
      
       </section>
