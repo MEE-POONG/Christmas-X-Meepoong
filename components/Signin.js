@@ -74,18 +74,15 @@ data-aos-duration="20000"
           </div>
         </div>
       </div>
+      <div className=" sm:hidden lg:hidden hidden">
       <Image
-      data-aos="fade-up"
-      data-aos-duration="20000" 
-          data-aos-offset="200"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="false"
-            className="max-w-full rounded-lg shadow-lg"
+      
+            className="max-w-full rounded-lg shadow-lg "
             src="/assets/chat-01.png"
             width={750}
             height={500}
           />
+          </div>
     </div>
   </>
 
