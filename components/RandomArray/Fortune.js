@@ -96,6 +96,18 @@ export default function Fortune() {
         }}className="text-base text-gray-600 font-normal border border-2 border-black rounded-lg mb-4 p-2  ">
         {shuffled_array3[num3]}
       </motion.div>
+      <div id="christmas-tree" className="christmas-tree">
+  <div className="tree">
+    <div className="tree-details"></div>
+  </div>
+  <div className="lights">
+    <div className="row-one"></div>
+    <div className="row-two"></div>
+  </div>
+  <div className="balls"></div>
+  <div className="star"></div>
+  <div className="shadow"></div>
+  </div>
         </motion.div>
   );
 }

@@ -7,6 +7,7 @@ export default function CardAds() {
 
 
 <div className=''>
+ 
 
 <section   data-aos="fade-up"
 data-aos-duration="20000" 
@@ -51,7 +52,7 @@ className="relative pt-12 0 z-40 -mt-12 ">
  
 
       </div>
-    
+
    
       <h3 data-aos="fade-up"
       data-aos-duration="5000" 

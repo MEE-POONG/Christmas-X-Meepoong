@@ -18,18 +18,11 @@ function Signin() {
     auth.signInWithPopup(sign);
   }
   return (
-    <>
-      <div
-        data-aos="fade-up"
-        data-aos-duration="20000"
-        data-aos-offset="200"
-        data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        className="bg-gray-100 min-h-full flex items-center justify-center  md:px-4 sm:px-6 lg:px-8 grid sm:grid-cols-1  md:grid-cols-1 lg:grid-cols-2"
-      >
-        <div className="lg:ml-40 lg:-mt-40 max-w-md w-full space-y-8  ">
-          <div>
+    <div   className="py-24 w-full  bg-card lg:h-screen sm:h-1/2 md:h-screen">
+    <section className=" lg:max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 py-24">
+
+      <div className="grid   sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-20 z-40 ">
+      <div className="text-center justify-center mx-auto">
             <Image
               data-aos="fade-up"
               data-aos-duration="20000"
@@ -39,20 +32,17 @@ function Signin() {
               data-aos-once="false"
               className="border-b-4 border-red-900 "
               src="/assets/CHATBOX-01.png"
-              width={800}
-              height={800}
+              width={500}
+              height={500}
             />
-          
-
-
-            <h2
+                <h2
               data-aos="fade-up"
               data-aos-duration="20000"
               data-aos-offset="200"
               data-aos-easing="ease-in-out"
               data-aos-mirror="true"
               data-aos-once="false"
-              className="mt-6 text-center text-3xl font-extrabold text-gray-900"
+              className="mt-6 text-center text-3xl font-extrabold text-red-600"
             >
               MeeChat
             </h2>
@@ -63,12 +53,11 @@ function Signin() {
               data-aos-easing="ease-in-out"
               data-aos-mirror="true"
               data-aos-once="false"
-              className="mt-2 text-center text-l text-gray-600"
+              className="mt-2 text-center text-xl text-gray-800"
             >
               เข้าร่วมสนทนากับพวกเรา และร่วมนับถอยหลังสู่ปีใหม่ไปด้วยกัน
             </div>
-          </div>
-          <div className="mt-8 space-y-6">
+            <div className="mt-8 space-y-6">
             <div>
               <button
                 data-aos="fade-up"
@@ -87,13 +76,13 @@ function Signin() {
             </div>
           </div>
         </div>
-        <div className="lg:-mt-40 p-2 text-center">
+        <div className="text-center justify-center mx-auto hidden lg:block md:hidden sm:hidden ">
         <div data-aos="fade-up"
         data-aos-duration="20000"
         data-aos-offset="200"
         data-aos-easing="ease-in-out"
         data-aos-mirror="true"
-        data-aos-once="false" className="text-center text-2xl font-bold">Welcome to MeeChat    
+        data-aos-once="false" className="text-center text-4xl text-red-600 font-bold">Welcome to MeeChat    
 </div>
 <div data-aos="fade-up"
         data-aos-duration="20000"
@@ -107,30 +96,26 @@ function Signin() {
            data-aos-offset="200"
            data-aos-easing="ease-in-out"
            data-aos-mirror="true"
-           data-aos-once="false"  className="max-w-full rounded-lg shadow-lg "
+           data-aos-once="false"  className=" rounded-lg shadow-lg "
             src="/assets/chat-01.png"
             width={750}
             height={500}
           />
-          <div data-aos="fade-up"
-        data-aos-duration="20000"
-        data-aos-offset="200"
-        data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        data-aos-once="false" className="text-center mt-6 font-semibold">ร่วมพูดคุยสนทนากับพวกเราชาวมีพุงและคนอื่นๆได้ที่นี่ เข้าร่วมการสนทนาด้วย Google Gmail
-          </div>
-          <div data-aos="fade-up"
-        data-aos-duration="20000"
-        data-aos-offset="200"
-        data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        data-aos-once="false" className="text-center  font-semibold">ชวนเพื่อนๆ พี่ๆ น้องๆ มาเข้าร่วมพูดคุยด้วยกันเยอะๆนะ
-          </div>
+
        
+          </div>
+
+          </div>
           
-        </div>
-      </div>
-    </>
+       
+       
+   
+   
+ 
+     
+   
+    </section>
+  </div>
   );
 }
 
@@ -175,7 +160,7 @@ function Chat() {
                 >
                   <SignOut />
                 </button>
-                <span className="text-gray-700 mr-3 ">Meepoong Chat </span>
+                <span className="text-gray-700 mr-3 ">MeeChat </span>
                
               </div>
             </div>
@@ -228,7 +213,7 @@ function SendMessage() {
     setMsg("");
   }
   return (
-    <div>
+    <div className="mb-20">
       <form onSubmit={sendMessage}>
         <div className="sendMsg">
           <div className="border-t-2 border-gray-200 px-4 pt-4 mb-2 sm:mb-0 ">

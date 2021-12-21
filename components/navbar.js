@@ -33,8 +33,11 @@ function navbar() {
     }
   }, [clientWindowHeight]);
   return (
-    <div className="   z-50">
+    <div className="z-50">
      
+      <div className='wire hidden sm:hidden md:hidden lg:block   w-full'> 
+                 <li className='wire-li'></li>    <li className='wire-li'></li>     <li className='wire-li'></li>    <li className='wire-li'></li>     <li className='wire-li'></li>    <li className='wire-li'></li>     <li className='wire-li'></li>    <li className='wire-li'></li>     <li className='wire-li'></li>    <li className='wire-li'></li>     <li className='wire-li'></li>    <li className='wire-li'></li>     <li className='wire-li'></li>    <li className='wire-li'></li>     <li className='wire-li'></li>    <li className='wire-li'></li>     <li className='wire-li'></li>    <li className='wire-li'></li>     <li className='wire-li'></li>    <li className='wire-li'></li>       
+  </div>
       <nav className=" navbar navbar-expand-lg navbar-light fixed-top mb-12 flex items-center justify-between flex-wrap bg-nav p-6 z-50 " style={{
         background: `rgba(129, 173, 175, ${backgroundTransparacy})`,
         padding: `${padding}px 0px`,
@@ -46,13 +49,13 @@ function navbar() {
           <div className="res-one  ">
             <Image
               className=""
-              src="/assets/logo.webp"
-              width={90}
-              height={54}
+              src="/assets/mc-01.png"
+              width={120}
+              height={120}
             />
           </div>
-          <span className=" h1 font-semibold  tracking-tight lg:flex lg:items-center lg:w-auto hidden sm:hidden md:hidden  ">
-            Meepong X Christmas
+          <span data-text="MerryChristmas" className=" h1 text-4xl sm:text-xl md:text-2xl lg:text-4xl font-semibold  tracking-tight lg:flex lg:items-center   ">
+          MERRYCHRISTMAS
           </span>
    
          

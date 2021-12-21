@@ -46,17 +46,17 @@ export default function Count() {
         </div></div>
         ) : (
           <div className="timer-inner  ">
-            <div className=" button timer-segment">
+            <div className=" button timer-segment ">
               <span className="time text-white ">{days}</span>
               <span className="label px-1 text-white">Days</span>
             </div>
 
-            <div className=" button timer-segment">
+            <div className=" button timer-segment ">
               <span className="time text-white ">{hours}</span>
               <span className="label px-1 text-white">Hour</span>
             </div>
 
-            <div className=" button timer-segment">
+            <div className=" button timer-segment visible sm:invisible md:invisible lg:visible">
               <span className="time text-white   ">{minutes}</span>
               <span className="label px-1 text-white">Min</span>
             </div>

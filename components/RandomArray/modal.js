@@ -22,6 +22,8 @@ export default function Pray() {
       >
         เช็คดวงของคุณ
       </button>
+
+      
     </div>
   );
 }

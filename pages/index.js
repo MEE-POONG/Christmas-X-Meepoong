@@ -25,10 +25,10 @@ import Signin from "../components/Signin";
       <Navbar />
 
       <CardLeft />  
-    
+{/*     
       <CardAds />
 
-      <Cardtwo /> 
+      <Cardtwo />  */}
       <Signin/>
 
       <div className="z-0">
