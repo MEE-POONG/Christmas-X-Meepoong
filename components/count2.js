@@ -3,7 +3,7 @@ import Par from '../pages/Par'
 
 export default function Count() {
   useEffect(() => {
-    const target = new Date("12/31/2021 23:59:59");
+    const target = new Date("12/31/2022 23:59:59");
     const interval = setInterval(() => {
       const now = new Date();
       const difference = target.getTime() - now.getTime();

@@ -166,28 +166,28 @@ footer .wave
 }
 footer .wave#wave1
 {
-  z-index: 10000;
+  z-index: 40;
   opacity: 1;
   bottom: 0;
   animation: animateWave 4s linear infinite ;
 }
 footer .wave#wave2
 {
-  z-index: 999;
+  z-index: 39;
   opacity: 0.5;
   bottom: 10px;
   animation: animateWave_02 4s linear infinite ;
 }
 footer .wave#wave3
 {
-  z-index: 10000;
+  z-index: 40;
   opacity: 0.2;
   bottom: 15px;
   animation: animateWave 3s linear infinite ;
 }
 footer .wave#wave4
 {
-  z-index: 999;
+  z-index: 39;
   opacity: 0.7;
   bottom: 20px;
   animation: animateWave_02 3s linear infinite ;
@@ -231,7 +231,7 @@ footer .wave#wave4
 }
 
 
-img {
+.img5 {
   border-radius: 50%;
   height: 45px;
   margin-top: -35px;
@@ -259,6 +259,7 @@ p {
   border-radius: 3000px;
   box-shadow: 0 0 10px rgb(164, 164, 164);
   align-items: center;
+  z-index: 1000;
 }
 
 .sent {
@@ -274,14 +275,17 @@ p {
   inset 0 0 6px #a23227, /* inner glow */
   inset 0 80px 80px -40px #ac3223, /* gradient */
   1px 1px 3px rgba(0,0,0,0.75); /* shadow */
+  z-index: 1000;
   
 }
 ::-webkit-scrollbar{
   width: 10px;
+  z-index: 1000;
 }
 ::-webkit-scrollbar-thumb{
  background: linear-gradient(transparent,#7b1a02);
  border-radius: 6px;
+ z-index: 1000;
 }
 ::-webkit-scrollbar-thumb:hover{
   background: linear-gradient(transparent,#e73104);
@@ -717,3 +721,80 @@ adsads */
   0% {transform: scaleX(1);}
   100% {transform: scaleX(3);}
 }
+
+
+/* scene 2022 animation */
+.close
+{
+  position: relative;
+  padding: 20px 20px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 40px;
+  transition: 1s;
+  text-decoration: none;
+  overflow: hidden;
+  -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0004);
+}
+.close:hover{
+  background: rgb(228, 54, 2);
+  box-shadow: 0 0 30px rgb(255, 0, 0);
+  box-shadow: 0 0 60px rgb(255, 0, 0);
+  box-shadow: 0 0 100px rgb(255, 0, 0);
+}
+.close::before
+{
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 400%;
+  background: rgb(255, 0, 0);
+  transition: 1s;
+  animation: animate 2s linear infinite;
+  animation-delay: calc(0.33s *rgb(255, 0, 0));
+  
+}
+.close:hover::before
+{
+  width: 120%;
+
+}
+@keyframes animate
+{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+.close::after
+{
+  content: '';
+  position: absolute;
+  inset: 4px;
+  background: rgb(0, 0, 0);
+}
+.close:hover::after
+{
+
+  background: rgb(255, 0, 0);
+}
+.close span
+{
+  position: relative;
+  z-index: 1;
+  font-size: 2em;
+  color: #fff;
+  opacity: 0.5;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.close:hover span
+{
+ opacity: 1;
+}
+

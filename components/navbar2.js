@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Count from "./count";
+import Count from "./count2";
 import { useEffect, useState } from "react";
 
 
@@ -58,7 +58,7 @@ function navbar() {
           <span data-text="MerryChristmas" className=" h1 text-4xl sm:text-xl md:text-2xl lg:text-4xl font-semibold  tracking-tight lg:flex lg:items-center   ">
           MERRYCHRISTMAS  
           </span>
-   
+
 
  
 

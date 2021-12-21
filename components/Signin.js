@@ -68,9 +68,9 @@ function Signin() {
                 data-aos-once="false"
                 type="submit"
                 onClick={signInWithGoogle}
-                className=" button cursor-pointer border-b-4 border-red-900 group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-red-600  "
+                className=" z-50 button cursor-pointer border-b-4 border-red-900 group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-red-600  "
               >
-                <span className="absolute left-0 inset-y-0 flex items-center pl-3"></span>
+                <span className="absolute left-0 inset-y-0 flex items-center pl-3 "></span>
                 <FcGoogle className="text-xl " /> Sign in With Google
               </button>
             </div>
@@ -140,7 +140,7 @@ function Chat() {
       });
   }, []);
   return (
-    <>
+    <div className="over z-50">
       <div
         data-aos="zoom-in"
         data-aos-duration="20000"
@@ -148,15 +148,15 @@ function Chat() {
         data-aos-easing="ease-in-out"
         data-aos-mirror="true"
         data-aos-once="false"
-        className=" w-full sm:p-6 justify-between flex flex-col h-screen "
+        className=" over  w-full sm:p-6 justify-between flex flex-col h-screen  "
       >
         <div className="flex sm:items-center justify-between py-3  border-b-2 border-gray-200">
           <div className="flex items-center space-x-4">
             <div className="flex flex-col leading-tight">
-              <div className="text-2xl mt-1 flex items-center">
+              <div className="text-2xl mt-1 flex items-center over">
                 <button
                   type="button"
-                  className="inline-flex items-center justify-center rounded-full h-20 w-20 transition duration-500 ease-in-out text-gray-500 hover:bg-gray-100 focus:outline-none"
+                  className="over z-50 inline-flex items-center justify-center rounded-full h-20 w-20 transition duration-500 ease-in-out text-gray-500 hover:bg-gray-100 focus:outline-none"
                 >
                   <SignOut />
                 </button>
@@ -181,7 +181,7 @@ function Chat() {
                       uid === auth.currentUser.uid ? "sent" : "received"
                     }`}
                   >
-                    <Image src={photoURL} alt="" width={80} height={80} />
+                    <Image src={photoURL} alt="" width={80} height={80} className="img5" />
                     <p>{text}</p>
                   </div>
                 </div>
@@ -195,7 +195,7 @@ function Chat() {
         <SendMessage scroll={scroll} />
         <div ref={scroll}></div>
       </div>
-    </>
+    </div>
   );
 }
 
