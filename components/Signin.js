@@ -18,7 +18,7 @@ function Signin() {
     auth.signInWithPopup(sign);
   }
   return (
-    <div   className="py-24 w-full  bg-card lg:h-screen sm:h-1/2 md:h-screen">
+    <div   className=" py-24 w-full  bg-card lg:h-screen sm:h-1/2 md:h-screen">
     <section className=" lg:max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 py-24">
 
       <div className="grid   sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-20 z-40 ">
@@ -140,36 +140,40 @@ function Chat() {
       });
   }, []);
   return (
-    <div className="over z-50">
+    <div className="over z-40">
       <div
-        data-aos="zoom-in"
-        data-aos-duration="20000"
-        data-aos-offset="200"
-        data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        className=" over  w-full sm:p-6 justify-between flex flex-col h-screen  "
+      
+        className=" over  w-full sm:p-6 justify-between flex flex-col h-screen  bg-chat "
       >
-        <div className="flex sm:items-center justify-between py-3  border-b-2 border-gray-200">
-          <div className="flex items-center space-x-4">
-            <div className="flex flex-col leading-tight">
-              <div className="text-2xl mt-1 flex items-center over">
+        <div className="grid grid-cols-6 w-full sm:items-center justify-between py-3  border-b-2 border-gray-200">
+          
                 <button
                   type="button"
-                  className="over z-50 inline-flex items-center justify-center rounded-full h-20 w-20 transition duration-500 ease-in-out text-gray-500 hover:bg-gray-100 focus:outline-none"
+                  className="over z-40  col-span-3 items-center justify-center rounded-full h-20 w-20 transition duration-500 ease-in-out text-gray-500 hover:bg-gray-100 focus:outline-none"
                 >
                   <SignOut />
                 </button>
-                <span className="text-gray-700 mr-3 ">MeeChat </span>
+            <div className="col-span-3 "> <h2
+           
+           className="mt-6 meechat "
+         >
+           <span  >M</span>
+           <span  >E</span>
+           <span  >E</span>
+           <span >C</span>
+           <span >H</span>
+           <span  >A</span>
+           <span >T</span>
+        
+         </h2></div>    
                
-              </div>
-            </div>
-          </div>
+               
+        
           <div className="flex items-center space-x-2"></div>
         </div>
         <div
           id="messages"
-          className="flex flex-col space-y-4 p-3 overflow-y-auto scrollbar-thumb-blue scrollbar-thumb-rounded scrollbar-track-blue-lighter scrollbar-w-2 scrolling-touch"
+          className="flex flex-col space-y-4 p-3 overflow-y-auto scrollbar-thumb-blue scrollbar-thumb-rounded scrollbar-track-blue-lighter scrollbar-w-2 scrolling-touch over z-40"
         >
           <div className="chat-message">
             <div className="msgs">
@@ -213,10 +217,10 @@ function SendMessage() {
     setMsg("");
   }
   return (
-    <div className="mb-20">
-      <form onSubmit={sendMessage}>
-        <div className="sendMsg">
-          <div className="border-t-2 border-gray-200 px-4 pt-4 mb-2 sm:mb-0 ">
+    <div className="mb-20 z-50">
+      <form onSubmit={sendMessage} className="z-50">
+        <div className="sendMsg  bg-green-700">
+          <div className="border-t-2 border-green-600 px-4 pt-4 mb-2 sm:mb-0 ">
             <div className="relative flex ">
               <input
                 type="text"

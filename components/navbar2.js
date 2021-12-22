@@ -1,3 +1,4 @@
+
 import React from "react";
 import Image from "next/image";
 import Count from "./count2";
@@ -49,14 +50,13 @@ function navbar() {
           
           <div className="res-one  ">
             <Image
-              className=""
               src="/assets/mc-01.png"
               width={120}
               height={120}
             />
           </div>
-          <span data-text="MerryChristmas" className=" h1 text-4xl sm:text-xl md:text-2xl lg:text-4xl font-semibold  tracking-tight lg:flex lg:items-center   ">
-          MERRYCHRISTMAS  
+          <span data-text="MEEPOONG..." className=" h1 text-4xl sm:text-xl md:text-2xl lg:text-4xl font-semibold  tracking-tight lg:flex lg:items-center   ">
+          MEEPOONG
           </span>
 
 

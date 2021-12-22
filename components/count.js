@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import { useEffect, useState } from "react";
 import Par from '../pages/Par'
 
@@ -39,6 +40,7 @@ export default function Count() {
         <div className="  w-full  fixed top-0 left-0  flex items-center justify-center  bg-opacity-50 transform transition-transform duration-300 insert-0 text-right inline-block  px-4 py-2 leading-none  text-white  w-screen h-screen  ">
         <a href='#'className="z-40 text-7xl text-white z-50 close rounded-lg" ><span> Happy New Year ! </span></a>
      
+
           <a href='/End'className="text-2xl text-white z-50 close rounded-lg" ><span> Close </span></a>
 
    
