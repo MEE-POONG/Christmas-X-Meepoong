@@ -32,7 +32,7 @@ import Signin from "../components/Signin";
 
       <div className="z-0">
         {" "}
-        {/* <ParticleBackground /> */}
+        <ParticleBackground />
     
  
       </div>

@@ -22,7 +22,7 @@ import Signin from "../components/Signin";
         <title>Christmas X Meepoong</title>
       </Head>
       <Navbar />
-      {/* <CardAds /> */}
+
       <CardLeft />  
  
   
@@ -32,7 +32,7 @@ import Signin from "../components/Signin";
 
       <div className="z-0">
         {" "}
-          {/* <ParticleBackground /> */}
+          <ParticleBackground />
     
  
       </div>

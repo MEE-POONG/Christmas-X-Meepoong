@@ -217,8 +217,8 @@ function SendMessage() {
     setMsg("");
   }
   return (
-    <div className="mb-20 z-50">
-      <form onSubmit={sendMessage} className="z-50">
+    <div className="mb-20 z-40">
+      <form onSubmit={sendMessage} className="z-40">
         <div className="sendMsg  bg-green-700">
           <div className="border-t-2 border-green-600 px-4 pt-4 mb-2 sm:mb-0 ">
             <div className="relative flex ">
@@ -227,12 +227,12 @@ function SendMessage() {
                 placeholder="Write Something"
                 value={msg}
                 onChange={(e) => setMsg(e.target.value)}
-                className="w-full focus:outline-none focus:placeholder-gray-400 text-gray-600 placeholder-gray-600 pl-12 bg-gray-200 rounded-full py-3"
+                className="w-full focus:outline-none focus:placeholder-gray-400 text-gray-600 placeholder-gray-600 pl-12 bg-gray-200 rounded-full py-3 z-40" 
               />
-              <div className="absolute right-0 items-center inset-y-0  sm:flex ">
+              <div className="absolute right-0 items-center inset-y-0  sm:flex flex md:flex lg:flex ">
                 <button
                   type="submit"
-                  className="inline-flex items-center justify-center rounded-full h-12 w-12 transition duration-500 ease-in-out text-white bg-blue-500 hover:bg-blue-400 focus:outline-none"
+                  className="inline-flex items-center justify-center rounded-full h-12 w-12 transition duration-500 ease-in-out text-white bg-blue-500 hover:bg-blue-400 focus:outline-none z-40"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
