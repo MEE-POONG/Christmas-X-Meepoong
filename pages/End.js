@@ -1,13 +1,15 @@
-import Navbar from "../components/navbar2";
+import Navbar from "../components/navbar";
 import React,{useEffect} from "react";
 import Head from "next/head";
 import CardLeft from "../components/CardLeft";
 import ParticleBackground from "./ParticleBackground";
 import Footer from "../components/Footer";
-import CardAds from "../components/CardAds";
+
 import Aos from "aos";
 import 'aos/dist/aos.css'
 import Signin from "../components/Signin";
+
+import Form  from "../components/Form";
 
 
   const Sliding = () => {
@@ -25,14 +27,15 @@ import Signin from "../components/Signin";
 
       <CardLeft />  
  
-  
+<Form/>
 
 
-      <Signin/>
+
+      {/* <Signin/> */}
 
       <div className="z-0">
         {" "}
-          <ParticleBackground />
+        <ParticleBackground />
     
  
       </div>

@@ -39,7 +39,7 @@ function navbar() {
  
   
       <nav className=" navbar navbar-expand-lg navbar-light fixed-top mb-12 flex items-center justify-between flex-wrap bg-nav p-6 z-50 " style={{
-        background: `rgba(129, 173, 175, ${backgroundTransparacy})`,
+        background: `rgba(100, 150, 155, ${backgroundTransparacy})`,
         padding: `${padding}px 0px`,
         boxShadow: `rgb(0 0 0 / ${boxShadow}) 0px 0px 20px 6px`,
       }}>
@@ -50,8 +50,8 @@ function navbar() {
             <Image
               className=""
               src="/assets/mc-01.png"
-              width={120}
-              height={120}
+              width={90}
+              height={90}
             />
           </div>
           <span data-text="MEEPOONG..." className=" h1 text-4xl sm:text-xl md:text-2xl lg:text-4xl font-semibold  tracking-tight lg:flex lg:items-center   ">

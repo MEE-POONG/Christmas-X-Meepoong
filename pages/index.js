@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 import Aos from "aos";
 import 'aos/dist/aos.css'
 import Signin from "../components/Signin";
-import TodoList from "../components/TodoList";
+
 import Form  from "../components/Form";
 
 
@@ -28,20 +28,20 @@ import Form  from "../components/Form";
       <CardLeft />  
  
 <Form/>
-  {/* <TodoList/> */}
+
 
 
       {/* <Signin/> */}
 
       <div className="z-0">
         {" "}
-        {/* <ParticleBackground /> */}
+        <ParticleBackground />
     
  
       </div>
 
-      {/* <Footer />
-  */}
+      <Footer />
+ 
     </div>
   );
 }

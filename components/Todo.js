@@ -1,23 +1,44 @@
-import React from 'react'
-import firebase from '../firebase'
+import React, { useEffect, useState } from "react";
 
-function Todo({todo}) {
+function Todo({ todo, ipAddress }) {
+  console.log(ipAddress, todo.ip, ipAddress === todo.ip);
+
+  if (ipAddress === todo.ip) {
     return (
-        
-         
-        <div className="chat-message">
-         <div className="flex items-end">
-            <div className="flex flex-col space-y-2 text-xL max-w-xs mx-2 order-2 items-start">
-               <div><span className="px-4 py-2 rounded-lg inline-block rounded-bl-none bg-gray-300 text-gray-600"> {todo.title} </span></div>
+      <div className="chat-message right-0">
+        <div className="flex items-end justify-end">
+          <div
+            className={
+              "flex flex-col space-y-2 text-xs max-w-xs mx-2 order-1 items-end"
+            }
+          >
+            <div>
+              <span className="px-4 py-2 rounded-lg inline-block rounded-br-none bg-blue-600 text-white">
+                {" "}
+                {todo.title}{" "}
+              </span>
             </div>
-            <img src="https://images.unsplash.com/photo-1549078642-b2ba4bda0cdb?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=3&amp;w=144&amp;h=144" alt="My profile" className="w-6 h-6 rounded-full order-1"/>
-         </div>
-         <div className='mb-3'></div>
+          </div>
+        </div>
+        <div className="mb-3"></div>
       </div>
- 
-            
-     
-    )
+    );
+  }
+  return (
+    <div className="chat-message right-0">
+      <div className="flex">
+        <div className={"flex space-y-2 text-xL max-w-xs mx-2 order-2 w-full"}>
+          <div>
+            <span className="px-4 py-2 rounded-lg inline-block rounded-bl-none bg-gray-100 text-gray-600">
+              {" "}
+              {todo.title}{" "}
+            </span>
+          </div>
+        </div>
+      </div>
+      <div className="mb-3"></div>
+    </div>
+  );
 }
 
-export default Todo
+export default Todo;
