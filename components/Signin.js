@@ -6,7 +6,6 @@ import Image from "next/image";
 import { FcGoogle } from "react-icons/fc";
 import { GoSignOut } from "react-icons/go";
 
-
 function App() {
   const [user] = useAuthState(auth);
   return <>{user ? <Chat /> : <Signin />}</>;
@@ -18,11 +17,10 @@ function Signin() {
     auth.signInWithPopup(sign);
   }
   return (
-    <div   className=" py-24 w-full  bg-card lg:h-screen sm:h-1/2 md:h-screen">
-    <section className=" lg:max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 py-24">
-
-      <div className="grid   sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-20 z-40 ">
-      <div className="text-center justify-center mx-auto">
+    <div className=" py-24 w-full  bg-card lg:h-screen sm:h-1/2 md:h-screen">
+      <section className=" lg:max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 py-24">
+        <div className="grid   sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-20 z-40 ">
+          <div className="text-center justify-center mx-auto">
             <Image
               data-aos="fade-up"
               data-aos-duration="20000"
@@ -35,7 +33,7 @@ function Signin() {
               width={500}
               height={500}
             />
-                <h2
+            <h2
               data-aos="fade-up"
               data-aos-duration="20000"
               data-aos-offset="200"
@@ -58,64 +56,64 @@ function Signin() {
               เข้าร่วมสนทนากับพวกเรา และร่วมนับถอยหลังสู่ปีใหม่ไปด้วยกัน
             </div>
             <div className="mt-8 space-y-6">
-            <div>
-              <button
-                data-aos="fade-up"
-                data-aos-duration="20000"
-                data-aos-offset="200"
-                data-aos-easing="ease-in-out"
-                data-aos-mirror="true"
-                data-aos-once="false"
-                type="submit"
-                onClick={signInWithGoogle}
-                className=" z-50 button cursor-pointer border-b-4 border-red-900 group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-red-600  "
-              >
-                <span className="absolute left-0 inset-y-0 flex items-center pl-3 "></span>
-                <FcGoogle className="text-xl " /> Sign in With Google
-              </button>
+              <div>
+                <button
+                  data-aos="fade-up"
+                  data-aos-duration="20000"
+                  data-aos-offset="200"
+                  data-aos-easing="ease-in-out"
+                  data-aos-mirror="true"
+                  data-aos-once="false"
+                  type="submit"
+                  onClick={signInWithGoogle}
+                  className=" z-50 button cursor-pointer border-b-4 border-red-900 group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-red-600  "
+                >
+                  <span className="absolute left-0 inset-y-0 flex items-center pl-3 "></span>
+                  <FcGoogle className="text-xl " /> Sign in With Google
+                </button>
+              </div>
             </div>
           </div>
+          <div className="text-center justify-center mx-auto hidden lg:block md:hidden sm:hidden ">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="20000"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              className="text-center text-4xl text-red-600 font-bold"
+            >
+              Welcome to MeeChat
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-duration="20000"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              className="text-gray-800 text-xl mb-4"
+            >
+              {" "}
+              Let chat together !
+            </div>
+            <Image
+              data-aos="fade-up"
+              data-aos-duration="20000"
+              data-aos-offset="200"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              className=" rounded-lg shadow-lg "
+              src="/assets/chat-01.png"
+              width={750}
+              height={500}
+            />
+          </div>
         </div>
-        <div className="text-center justify-center mx-auto hidden lg:block md:hidden sm:hidden ">
-        <div data-aos="fade-up"
-        data-aos-duration="20000"
-        data-aos-offset="200"
-        data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        data-aos-once="false" className="text-center text-4xl text-red-600 font-bold">Welcome to MeeChat    
-</div>
-<div data-aos="fade-up"
-        data-aos-duration="20000"
-        data-aos-offset="200"
-        data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        data-aos-once="false" className="text-gray-800 text-xl mb-4"> Let chat together !</div>
-          <Image
-           data-aos="fade-up"
-           data-aos-duration="20000"
-           data-aos-offset="200"
-           data-aos-easing="ease-in-out"
-           data-aos-mirror="true"
-           data-aos-once="false"  className=" rounded-lg shadow-lg "
-            src="/assets/chat-01.png"
-            width={750}
-            height={500}
-          />
-
-       
-          </div>
-
-          </div>
-          
-       
-       
-   
-   
- 
-     
-   
-    </section>
-  </div>
+      </section>
+    </div>
   );
 }
 
@@ -141,34 +139,27 @@ function Chat() {
   }, []);
   return (
     <div className="over z-40">
-      <div
-      
-        className=" over  w-full sm:p-6 justify-between flex flex-col h-screen  bg-chat "
-      >
+      <div className=" over  w-full sm:p-6 justify-between flex flex-col h-screen  bg-chat ">
         <div className="grid grid-cols-6 w-full sm:items-center justify-between py-3  border-b-2 border-gray-200">
-          
-                <button
-                  type="button"
-                  className="over z-40  col-span-3 items-center justify-center rounded-full h-20 w-20 transition duration-500 ease-in-out text-gray-500 hover:bg-gray-100 focus:outline-none"
-                >
-                  <SignOut />
-                </button>
-            <div className="col-span-3 "> <h2
-           
-           className="mt-6 meechat "
-         >
-           <span  >M</span>
-           <span  >E</span>
-           <span  >E</span>
-           <span >C</span>
-           <span >H</span>
-           <span  >A</span>
-           <span >T</span>
-        
-         </h2></div>    
-               
-               
-        
+          <button
+            type="button"
+            className="over z-40  col-span-3 items-center justify-center rounded-full h-20 w-20 transition duration-500 ease-in-out text-gray-500 hover:bg-gray-100 focus:outline-none"
+          >
+            <SignOut />
+          </button>
+          <div className="col-span-3 ">
+            {" "}
+            <h2 className="mt-6 meechat ">
+              <span>M</span>
+              <span>E</span>
+              <span>E</span>
+              <span>C</span>
+              <span>H</span>
+              <span>A</span>
+              <span>T</span>
+            </h2>
+          </div>
+
           <div className="flex items-center space-x-2"></div>
         </div>
         <div
@@ -186,7 +177,13 @@ function Chat() {
                       uid === auth.currentUser.uid ? "sent" : "received"
                     }`}
                   >
-                    <Image src={photoURL} alt="" width={80} height={80} className="img5" />
+                    <Image
+                      src={photoURL}
+                      alt=""
+                      width={80}
+                      height={80}
+                      className="img5"
+                    />
                     <p>{text}</p>
                   </div>
                 </div>
@@ -228,7 +225,7 @@ function SendMessage() {
                 placeholder="Write Something"
                 value={msg}
                 onChange={(e) => setMsg(e.target.value)}
-                className="w-full focus:outline-none focus:placeholder-gray-400 text-gray-600 placeholder-gray-600 pl-12 bg-gray-200 rounded-full py-3 z-40" 
+                className="w-full focus:outline-none focus:placeholder-gray-400 text-gray-600 placeholder-gray-600 pl-12 bg-gray-200 rounded-full py-3 z-40"
               />
               <div className="absolute right-0 items-center inset-y-0  sm:flex flex md:flex lg:flex ">
                 <button
