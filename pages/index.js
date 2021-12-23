@@ -4,10 +4,12 @@ import Head from "next/head";
 import CardLeft from "../components/CardLeft";
 import ParticleBackground from "./ParticleBackground";
 import Footer from "../components/Footer";
-import CardAds from "../components/CardAds";
+
 import Aos from "aos";
 import 'aos/dist/aos.css'
 import Signin from "../components/Signin";
+import TodoList from "../components/TodoList";
+import Form  from "../components/Form";
 
 
   const Sliding = () => {
@@ -25,20 +27,21 @@ import Signin from "../components/Signin";
 
       <CardLeft />  
  
-  
+<Form/>
+  {/* <TodoList/> */}
 
 
-      <Signin/>
+      {/* <Signin/> */}
 
       <div className="z-0">
         {" "}
-        <ParticleBackground />
+        {/* <ParticleBackground /> */}
     
  
       </div>
 
-      <Footer />
- 
+      {/* <Footer />
+  */}
     </div>
   );
 }

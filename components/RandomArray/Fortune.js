@@ -60,7 +60,7 @@ export default function Fortune() {
   const shuffled_array3 = _.shuffle(array3);
   const num3 = Math.floor(Math.random(array3) * array3.length);
   return (
-    <motion.div initial={{opacity :0}} animate ={{opacity : 1 ,transition: {duration:1.2,delay : 0.3}}}>
+    <motion.div initial={{opacity :0}} animate ={{opacity : 1 ,transition: {duration:1.2,delay : 0.3}}} className="">
 
       <motion.div 
       initial={{ scale: 0 }}
@@ -96,18 +96,7 @@ export default function Fortune() {
         }}className="text-base text-gray-600 font-normal border border-2 border-black rounded-lg mb-4 p-2  ">
         {shuffled_array3[num3]}
       </motion.div>
-      <div id="christmas-tree" className="christmas-tree">
-  <div className="tree">
-    <div className="tree-details"></div>
-  </div>
-  <div className="lights">
-    <div className="row-one"></div>
-    <div className="row-two"></div>
-  </div>
-  <div className="balls"></div>
-  <div className="star"></div>
-  <div className="shadow"></div>
-  </div>
+
         </motion.div>
   );
 }
