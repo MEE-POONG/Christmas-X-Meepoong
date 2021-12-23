@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 
 import React from "react";
 import Image from "next/image";
@@ -6,7 +7,7 @@ import { useEffect, useState } from "react";
 
 
 
-function navbar() {
+function navbar2() {
   const [clientWindowHeight, setClientWindowHeight] = useState("");
 
   const [backgroundTransparacy, setBackgroundTransparacy] = useState(0);
@@ -76,4 +77,4 @@ function navbar() {
   );
 }
 
-export default navbar;
+export default navbar2;

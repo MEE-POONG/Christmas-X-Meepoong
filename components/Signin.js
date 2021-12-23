@@ -89,7 +89,7 @@ function Signin() {
         data-aos-offset="200"
         data-aos-easing="ease-in-out"
         data-aos-mirror="true"
-        data-aos-once="false" className="text-gray-800 text-xl mb-4"> Let's chat together !</div>
+        data-aos-once="false" className="text-gray-800 text-xl mb-4"> Let chat together !</div>
           <Image
            data-aos="fade-up"
            data-aos-duration="20000"
@@ -178,6 +178,7 @@ function Chat() {
           <div className="chat-message">
             <div className="msgs">
               {messages.map(({ id, text, photoURL, uid }) => (
+                // eslint-disable-next-line react/jsx-key
                 <div>
                   <div
                     key={id}
