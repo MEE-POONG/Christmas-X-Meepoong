@@ -37,9 +37,7 @@ function navbar2() {
   return (
     <div className="z-50">
      
-      <div className='wire hidden sm:hidden md:hidden lg:block   w-full'> 
-                 <li className='wire-li'></li>    <li className='wire-li'></li>     <li className='wire-li'></li>    <li className='wire-li'></li>     <li className='wire-li'></li>    <li className='wire-li'></li>     <li className='wire-li'></li>    <li className='wire-li'></li>     <li className='wire-li'></li>    <li className='wire-li'></li>     <li className='wire-li'></li>    <li className='wire-li'></li>     <li className='wire-li'></li>    <li className='wire-li'></li>     <li className='wire-li'></li>    <li className='wire-li'></li>     <li className='wire-li'></li>    <li className='wire-li'></li>     <li className='wire-li'></li>    <li className='wire-li'></li>       
-  </div>
+    
   
       <nav className=" navbar navbar-expand-lg navbar-light fixed-top mb-12 flex items-center justify-between flex-wrap bg-nav p-6 z-50 " style={{
         background: `rgba(129, 173, 175, ${backgroundTransparacy})`,
