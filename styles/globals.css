@@ -16,6 +16,9 @@
   justify-content: center;
 }
 .countdown-timer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 600px;
   height: 100px;
   border: 2px solid black;
@@ -28,17 +31,29 @@
 
 
 .timer-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   color:black;
   padding: 0.5rem;
 }
 .timer-segment{
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   flex-direction: column;
   text-align: center;
   padding: 0.2rem;
 }
 .time{
-  text-align: center;
+  display: flex;
+  align-items: center;
+
+}
+.tim{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 @media only screen and (max-width: 480px) {
   /* For mobile phones: */
@@ -324,7 +339,7 @@ p {
 .sent {
   background-color: #5e0d0c;
   color: white;
-  border-top-right-radius: 1000px;
+
   flex-direction: row-reverse;
   padding: 5px 5px 5px 5px;
   text-align: end;
@@ -371,7 +386,6 @@ p {
   border: 1px solid rgb(4, 100, 47);
   background-color: #0d6145;
   color: white;
-  border-top-left-radius: 1000px;
   padding: 5px 5px 5px 5px;
   float: left;
   box-shadow:
@@ -527,6 +541,9 @@ p {
 adsads */
 
 .wire{
+  display: flex;
+  justify-content:center;
+
   text-align: center;
   white-space: nowrap;
   position: absolute;
@@ -539,6 +556,8 @@ adsads */
 
 }
 .wire-li{
+  display: flex;
+  justify-content:center;
   position: relative;
   list-style: none;
   margin: 0 15px;
@@ -557,6 +576,7 @@ adsads */
 }
 
 .wire li:nth-child(odd){
+  
   animation-name: odd-flash;
 }
 .wire li::before{
