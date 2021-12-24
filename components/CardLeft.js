@@ -8,11 +8,12 @@ import Pray from "./RandomArray/modal";
 
 export default function Card() {
   return (
+    <itim>
     <div   className="py-24 w-full  bg-card lg:h-screen sm:h-1/2 md:h-screen z-40">
       <section className=" lg:max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 py-24 z-40 ">
  
         <div className=" z-40  ">
-          <div className=" bg-gray-100 rounded-lg shadow-lg p-12 flex flex-col justify-center items-center z-40">
+          <div className=" lg:w-1/2 md:w-full sm:w-full bg-ggo   rounded-lg shadow-lg p-12 flex flex-col justify-center items-center z-40">
             <div className="mb-8 -mt-28 z-40">
               <Image
                 className="object-center object-cover rounded-full "
@@ -23,7 +24,7 @@ export default function Card() {
               
             </div>
             <div  className="text-center ">
-              <p className="text-xl text-red-500 font-bold mb-2">
+              <p className="text-3xl text-red-500 font-bold mb-2">
                 ดวงของคุณในปี 2022 {" "}
               </p>
 
@@ -40,5 +41,6 @@ export default function Card() {
      
       </section>
     </div>
+    </itim>
   );
 }

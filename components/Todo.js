@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-
+import Image from "next/image";
 function Todo({ todo, ipAddress }) {
   console.log(ipAddress, todo.ip, ipAddress === todo.ip);
+
 
   if (ipAddress === todo.ip) {
     return (
@@ -9,7 +10,7 @@ function Todo({ todo, ipAddress }) {
         <div className="flex items-end justify-end">
           <div
             className={
-              "flex flex-col space-y-2 text-xs max-w-xs mx-2 order-1 items-end"
+              "flex flex-col space-y-2 text-xL max-w-xs mx-2 order-1 items-end"
             }
           >
             <div>
@@ -25,9 +26,9 @@ function Todo({ todo, ipAddress }) {
     );
   }
   return (
-    <div className="chat-message right-0">
+    <div className="chat-message right-0 ">
       <div className="flex">
-        <div className={"flex space-y-2 text-xL max-w-xs mx-2 order-2 w-full"}>
+        <div className={"flex space-y-2 text-xL max-w-xs mx-2 order-2 w-full "}>
           <div>
             <span className="px-4 py-2 rounded-lg inline-block rounded-bl-none bg-gray-100 text-gray-600">
               {" "}

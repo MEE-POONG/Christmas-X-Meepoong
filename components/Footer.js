@@ -4,12 +4,7 @@ import {FaFacebook,FaInstagram,FaLine,FaGlobe} from 'react-icons/fa'
 function Footer() {
   return (
 <footer className="bottom-0 ">
-  <div className="waves">
-    <div className="wave" id="wave1"></div>
-    <div className="wave" id="wave2"></div>
-    <div className="wave" id="wave3"></div>
-    <div className="wave" id="wave4"></div>
-  </div>
+
   <ul className="social_icon">
     <li><a href='https://www.facebook.com/meepoong'><FaFacebook/></a></li>
     <li><a href='https://www.instagram.com/meepoonggroup/'><FaInstagram/></a></li>

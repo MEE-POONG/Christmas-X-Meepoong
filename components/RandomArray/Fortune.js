@@ -78,7 +78,7 @@ export default function Fortune() {
         stiffness: 260,
         damping: 20
       }}
-      className="text-base text-gray-600 font-normal border border-2 border-black rounded-lg mb-4 p-2  z-40">
+      className="text-base text-black font-normal border border-2 border-black rounded-lg mb-4 p-2  z-40">
         {shuffled_array1[num1]}
       </motion.div>
       <motion.div
@@ -89,7 +89,7 @@ export default function Fortune() {
          type: "spring",
          stiffness: 260,
          damping: 20
-       }}className="text-base text-gray-600 font-normal border border-2 border-black rounded-lg mb-4 p-2  z-40">
+       }}className="text-base text-black font-normal border border-2 border-black rounded-lg mb-4 p-2  z-40">
         {shuffled_array2[num2]}
       </motion.div>
       <motion.div
@@ -100,7 +100,7 @@ export default function Fortune() {
           type: "spring",
           stiffness: 260,
           damping: 20
-        }}className="text-base text-gray-600 font-normal border border-2 border-black rounded-lg mb-4 p-2   z-40">
+        }}className="text-base text-black font-normal border border-2 border-black rounded-lg mb-4 p-2   z-40">
         {shuffled_array3[num3]}
       </motion.div>
 

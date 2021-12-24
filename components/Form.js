@@ -1,11 +1,14 @@
 import React, { useState } from "react";
-import { clear } from "react-tsparticles";
 import firebase from "../firebase";
 import TodoList from "./TodoList";
+
 
 import publicIp from "public-ip";
 
 function Form() {
+  function closeForm(){
+    document.getElementById("myForm").style.display = "none"
+}
   const [title, setTitle] = useState("");
   const handleOnChange = (e) => {
     setTitle(e.target.value);
@@ -20,20 +23,22 @@ function Form() {
     setTitle('')
   };
   return (
-    <div className="flex-1 p:2 sm:p-6 justify-between flex flex-col h-screen bg-chat z-40">
-      <div className="flex sm:items-center justify-center py-3 border-b-2 border-gray-200 bg-green-800 z-40">
-        <div className="op ">MEECHAT</div>
-        <div className="flex items-center space-x-4"></div>
-      </div>
+ 
+    <div className="curve5 flex-1  justify-between flex flex-col rounded-l-lg rounded-t-lg chatheight bg-chat z-50">
+
+
+<div type="button" className="absolute btn cancel  right-0 -top-8 bg-white rounded-full text-xl   " onClick={closeForm}> Close</div>
+
+
 
       <div
-        id="messages"
+  
         className="flex flex-col space-y-4 p-3 overflow-y-auto scrollbar-thumb-blue scrollbar-thumb-rounded scrollbar-track-blue-lighter scrollbar-w-2 scrolling-touch z-40"
       >
         <TodoList />
       </div>
 
-      <div className="border-t-2 border-gray-200 px-4 pt-4 mb-24 sm:mb-24">
+      <div className="border-t-2 border-gray-200 px-4 mb-2 pt-4 ">
         <div className="relative flex">
           <span className="absolute inset-y-0 flex items-center">
             <button
@@ -84,6 +89,7 @@ function Form() {
         </div>
       </div>
     </div>
+    
   );
 }
 
