@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Snapshot, snapshot_UNSTABLE } from "recoil";
 import firebase from "../firebase";
 import Todo from "./Todo";
-import publicIp from "public-ip";
+import macaddress from "macaddress";
 
 function TodoList() {
   const messagesEndRef = useRef(null);
@@ -22,7 +22,10 @@ function TodoList() {
     getIP();
   }, []);
   const getIP = async () => {
-    const data = await publicIp.v4();
+    macaddress.all().then(function (all) {
+      console.log(JSON.stringify(all, null, 2));
+    });
+    const data = 5;
     setIpAddress(data);
   };
 
