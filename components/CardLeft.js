@@ -6,7 +6,8 @@ import Pray from "./RandomArray/modal";
 
 
 
-export default function Card() {
+export default function Card()
+ {
   return (
     <itim>
     <div   className="py-24 w-full  bg-card lg:h-screen sm:h-1/2 md:h-screen z-40">

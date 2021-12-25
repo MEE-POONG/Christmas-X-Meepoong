@@ -66,6 +66,7 @@ export default function Fortune() {
   ];
   const shuffled_array3 = _.shuffle(array3);
   const num3 = Math.floor(Math.random(array3) * array3.length);
+
   return (
     <motion.div initial={{opacity :0}} animate ={{opacity : 1 ,transition: {duration:1.2,delay : 0.3}}} className="">
 
