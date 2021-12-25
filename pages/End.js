@@ -29,7 +29,7 @@ import ChatBox from "../components/ChatBox";
       <div className="z-0">
         {" "}
         <ParticleBackground />
-    {/* <ChatBox/> */}
+    <ChatBox/>
     
       </div>
  
