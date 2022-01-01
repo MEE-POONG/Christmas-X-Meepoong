@@ -1,4 +1,4 @@
-import Navbar from "../components/navbar";
+import Navbar2 from "../components/navbar2";
 import React,{useEffect} from "react";
 import Head from "next/head";
 import CardLeft from "../components/CardLeft";
@@ -20,7 +20,7 @@ import ChatBox from "../components/ChatBox";
         {" "}
         <title>Christmas X Meepoong</title>
       </Head>
-      <Navbar />
+      <Navbar2 />
 
       <CardLeft />  
  
